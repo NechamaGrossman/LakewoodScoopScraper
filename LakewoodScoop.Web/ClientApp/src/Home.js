@@ -31,20 +31,10 @@ export class Home extends Component {
                             {this.state.posts.map((post, i) => {
                                 return (
                                     <tr key={i}>
-                                        <td>
-                                            <img style={{ width: 300 }} src={post.image} />
-                                        </td>
-                                        <td>
-                                            <a target="_blank" href={post.url}>
-                                                {post.title}
-                                            </a>
-                                        </td>
-                                        <td>
-                                            {post.numberOfComments}
-                                        </td>
-                                        <td>
-                                            {post.blurb}
-                                        </td>
+                                        <td> <img style={{ width: 300 }} src={post.image} />  </td>
+                                        <td> <a target="_blank" href={post.url}>  {post.title} </a> </td>
+                                        <td>  {post.numberOfComments} </td>
+                                        <td> {post.blurb} </td>
                                     </tr>
                                 )
                             })}
